@@ -1,7 +1,11 @@
 import os
 import urllib.request
+
+import numpy as np
 import tensorflow as tf
 import streamlit as st
+
+IMG_SIZE = (256, 256)
 
 MODEL_URLS = {
     "models/baseline_cnn.keras": "https://github.com/nam21-12-06/Plant-Diease/releases/download/v1.0/baseline_cnn.keras",
