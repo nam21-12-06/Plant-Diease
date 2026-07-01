@@ -1,7 +1,9 @@
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent))
+APP_DIR = Path(__file__).resolve().parent.parent
+
+sys.path.append(str(APP_DIR))
 
 import streamlit as st
 from styles import inject_css, field_label, stat_block, field_divider

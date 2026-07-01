@@ -1,9 +1,14 @@
 import urllib.request
+import sys
 from pathlib import Path
 
 import numpy as np
 import tensorflow as tf
 import streamlit as st
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
 
 from src.config import MODEL_PATHS, MODEL_URLS, preprocess_pil_image
 

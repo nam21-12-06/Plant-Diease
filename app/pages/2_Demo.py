@@ -1,8 +1,12 @@
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent.parent))
-sys.path.append(str(Path(__file__).parent.parent.parent / "src"))
+APP_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = APP_DIR.parent
+
+sys.path.append(str(APP_DIR))
+sys.path.append(str(ROOT_DIR))
+sys.path.append(str(ROOT_DIR / "src"))
 
 import streamlit as st
 import numpy as np
