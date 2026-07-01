@@ -120,8 +120,8 @@ Trained models (`baseline_cnn.keras`, `mobilenetv2.keras`) are **not committed t
 
 ```bash
 mkdir -p models
-curl -L -o models/baseline_cnn.keras https://github.com/<user>/<repo>/releases/download/v1.0/baseline_cnn.keras
-curl -L -o models/mobilenetv2.keras  https://github.com/<user>/<repo>/releases/download/v1.0/mobilenetv2.keras
+curl -L -o models/baseline_cnn.keras https://github.com/nam21-12-06/Plant-Disease-Classification/releases/download/v1.0/baseline_cnn.keras
+curl -L -o models/mobilenetv2.keras  https://github.com/nam21-12-06/Plant-Disease-Classification/releases/download/v1.0/mobilenetv2.keras
 ```
 
 ---
@@ -178,7 +178,7 @@ Run across all 33 test images via `src/gradcam_batch_compare.py`, producing per-
 ## Installation
 
 ```bash
-git clone https://github.com/<user>/<repo>.git
+git clone https://github.com/nam21-12-06/Plant-Disease-Classification
 cd <repo>
 pip install -r requirements.txt
 ```
@@ -253,15 +253,15 @@ Outputs per-image comparisons and a full grid to `figures/gradcam_comparison/`.
 ## Requirements
 
 ```
-tensorflow>=2.13
+streamlit
+tensorflow==2.16.1
 numpy
 pandas
+Pillow
 matplotlib
 seaborn
 scikit-learn
-opencv-python
-streamlit
-Pillow
+opencv-python-headless
 ```
 
 ---
